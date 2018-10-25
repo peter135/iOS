@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863095C17A5309483DF40B73 /* Pods_ocRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE90BA91E6A357DD06B5EAA /* Pods_ocRouter.framework */; };
 		D0D58C5821814B45006E82D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C5721814B45006E82D6 /* AppDelegate.m */; };
 		D0D58C5B21814B45006E82D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C5A21814B45006E82D6 /* ViewController.m */; };
 		D0D58C5E21814B45006E82D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D58C5C21814B45006E82D6 /* Main.storyboard */; };
@@ -16,16 +17,20 @@
 		D0D58C8221814B84006E82D6 /* Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C6E21814B83006E82D6 /* Loading.m */; };
 		D0D58C8321814B84006E82D6 /* UIView+loading.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C6F21814B83006E82D6 /* UIView+loading.m */; };
 		D0D58C8421814B84006E82D6 /* UIViewController+FetchViewWillAppear.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C7221814B83006E82D6 /* UIViewController+FetchViewWillAppear.m */; };
-		D0D58C8521814B84006E82D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C7521814B83006E82D6 /* ViewController.m */; };
+		D0D58C8521814B84006E82D6 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C7521814B83006E82D6 /* JSViewController.m */; };
 		D0D58C8621814B84006E82D6 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = D0D58C7621814B83006E82D6 /* test.html */; };
 		D0D58C8721814B84006E82D6 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = D0D58C7721814B83006E82D6 /* test1.html */; };
 		D0D58C8821814B84006E82D6 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C7D21814B84006E82D6 /* PersonModel.m */; };
 		D0D58C8921814B84006E82D6 /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C7E21814B84006E82D6 /* PersonViewModel.m */; };
 		D0D58C8A21814B84006E82D6 /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C7F21814B84006E82D6 /* PersonView.m */; };
 		D0D58C8B21814B84006E82D6 /* PersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C8021814B84006E82D6 /* PersonController.m */; };
+		D0D58C8F21816FFD006E82D6 /* MainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C8E21816FFD006E82D6 /* MainRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5185FD0377BC6C0178CEBA48 /* Pods-ocRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocRouter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ocRouter/Pods-ocRouter.debug.xcconfig"; sourceTree = "<group>"; };
+		81C68C1B898878AE09108A99 /* Pods-ocRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocRouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ocRouter/Pods-ocRouter.release.xcconfig"; sourceTree = "<group>"; };
+		AFE90BA91E6A357DD06B5EAA /* Pods_ocRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ocRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D58C5321814B45006E82D6 /* ocRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D58C5621814B45006E82D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0D58C5721814B45006E82D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,10 +47,10 @@
 		D0D58C7021814B83006E82D6 /* Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
 		D0D58C7221814B83006E82D6 /* UIViewController+FetchViewWillAppear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FetchViewWillAppear.m"; sourceTree = "<group>"; };
 		D0D58C7321814B83006E82D6 /* UIViewController+FetchViewWillAppear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FetchViewWillAppear.h"; sourceTree = "<group>"; };
-		D0D58C7521814B83006E82D6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0D58C7521814B83006E82D6 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
 		D0D58C7621814B83006E82D6 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		D0D58C7721814B83006E82D6 /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
-		D0D58C7821814B83006E82D6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0D58C7821814B83006E82D6 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
 		D0D58C7A21814B84006E82D6 /* PersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
 		D0D58C7B21814B84006E82D6 /* PersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonController.h; sourceTree = "<group>"; };
 		D0D58C7C21814B84006E82D6 /* PersonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
@@ -54,6 +59,8 @@
 		D0D58C7F21814B84006E82D6 /* PersonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
 		D0D58C8021814B84006E82D6 /* PersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonController.m; sourceTree = "<group>"; };
 		D0D58C8121814B84006E82D6 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		D0D58C8D21816FFD006E82D6 /* MainRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainRouter.h; sourceTree = "<group>"; };
+		D0D58C8E21816FFD006E82D6 /* MainRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +68,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863095C17A5309483DF40B73 /* Pods_ocRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FB0793CEAC1E9E73AFB3FA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5185FD0377BC6C0178CEBA48 /* Pods-ocRouter.debug.xcconfig */,
+				81C68C1B898878AE09108A99 /* Pods-ocRouter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FCC0ABD388D236A774207CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFE90BA91E6A357DD06B5EAA /* Pods_ocRouter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0D58C4A21814B45006E82D6 = {
 			isa = PBXGroup;
 			children = (
 				D0D58C5521814B45006E82D6 /* ocRouter */,
 				D0D58C5421814B45006E82D6 /* Products */,
+				7FB0793CEAC1E9E73AFB3FA4 /* Pods */,
+				7FCC0ABD388D236A774207CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +113,7 @@
 		D0D58C5521814B45006E82D6 /* ocRouter */ = {
 			isa = PBXGroup;
 			children = (
+				D0D58C8C21816FD2006E82D6 /* mainRouter */,
 				D0D58C7421814B83006E82D6 /* JS_OC */,
 				D0D58C6C21814B83006E82D6 /* Loading */,
 				D0D58C7921814B83006E82D6 /* MVVM */,
@@ -107,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				D0D58C6D21814B83006E82D6 /* UIView+loading.h */,
-				D0D58C6E21814B83006E82D6 /* Loading.m */,
 				D0D58C6F21814B83006E82D6 /* UIView+loading.m */,
+				D0D58C6E21814B83006E82D6 /* Loading.m */,
 				D0D58C7021814B83006E82D6 /* Loading.h */,
 			);
 			path = Loading;
@@ -126,8 +154,8 @@
 		D0D58C7421814B83006E82D6 /* JS_OC */ = {
 			isa = PBXGroup;
 			children = (
-				D0D58C7821814B83006E82D6 /* ViewController.h */,
-				D0D58C7521814B83006E82D6 /* ViewController.m */,
+				D0D58C7821814B83006E82D6 /* JSViewController.h */,
+				D0D58C7521814B83006E82D6 /* JSViewController.m */,
 				D0D58C7621814B83006E82D6 /* test.html */,
 				D0D58C7721814B83006E82D6 /* test1.html */,
 			);
@@ -149,6 +177,15 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
+		D0D58C8C21816FD2006E82D6 /* mainRouter */ = {
+			isa = PBXGroup;
+			children = (
+				D0D58C8D21816FFD006E82D6 /* MainRouter.h */,
+				D0D58C8E21816FFD006E82D6 /* MainRouter.m */,
+			);
+			path = mainRouter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0D58C6921814B4C006E82D6 /* Build configuration list for PBXNativeTarget "ocRouter" */;
 			buildPhases = (
+				59C7D57777D680DFAFC43602 /* [CP] Check Pods Manifest.lock */,
 				D0D58C4F21814B45006E82D6 /* Sources */,
 				D0D58C5021814B45006E82D6 /* Frameworks */,
 				D0D58C5121814B45006E82D6 /* Resources */,
+				88833349F81D5C911BE67995 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,14 +255,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59C7D57777D680DFAFC43602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ocRouter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88833349F81D5C911BE67995 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ocRouter/Pods-ocRouter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MGJRouter/MGJRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGJRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ocRouter/Pods-ocRouter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0D58C4F21814B45006E82D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D0D58C8821814B84006E82D6 /* PersonModel.m in Sources */,
+				D0D58C8F21816FFD006E82D6 /* MainRouter.m in Sources */,
 				D0D58C8A21814B84006E82D6 /* PersonView.m in Sources */,
-				D0D58C8521814B84006E82D6 /* ViewController.m in Sources */,
+				D0D58C8521814B84006E82D6 /* JSViewController.m in Sources */,
 				D0D58C8321814B84006E82D6 /* UIView+loading.m in Sources */,
 				D0D58C5B21814B45006E82D6 /* ViewController.m in Sources */,
 				D0D58C8921814B84006E82D6 /* PersonViewModel.m in Sources */,
@@ -371,6 +460,7 @@
 		};
 		D0D58C6A21814B4C006E82D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5185FD0377BC6C0178CEBA48 /* Pods-ocRouter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +478,7 @@
 		};
 		D0D58C6B21814B4C006E82D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C68C1B898878AE09108A99 /* Pods-ocRouter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

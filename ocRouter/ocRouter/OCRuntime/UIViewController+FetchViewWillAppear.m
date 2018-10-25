@@ -60,6 +60,7 @@
 
 -(void)runtime{
     
+    NSDictionary *dict =@{@"userName":@"13033**",@"userid":@"159595**"};
     
     //动态生成类
     Class WidgetClass = objc_allocateClassPair([NSObject class], "Widget", 0);

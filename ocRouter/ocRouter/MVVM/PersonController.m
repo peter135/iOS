@@ -38,8 +38,8 @@
 
         make.left.equalTo(self).with.offset(120);
         make.top.equalTo(self).with.offset(40);
-        make.width.equalTo(200);
-        make.height.equalTo(60);
+        make.width.equalTo(@(200));
+        make.height.equalTo(@(60));
 
 
     }];

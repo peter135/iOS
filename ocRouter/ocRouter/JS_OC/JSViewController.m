@@ -6,16 +6,16 @@
 //  Copyright © 2015年 huangyibiao. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "JSViewController.h"
 
-@interface ViewController () <UIWebViewDelegate>
+@interface JSViewController () <UIWebViewDelegate>
 
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) JSContext *jsContext;
 
 @end
 
-@implementation ViewController
+@implementation JSViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];

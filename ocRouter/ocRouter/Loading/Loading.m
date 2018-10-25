@@ -97,7 +97,7 @@
     [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.right.equalTo(self).with.offset(-20);
-        make.left.equalTo(self.indicator.right).with.offset(10);
+        make.left.equalTo(self.indicator.mas_right).with.offset(10);
         make.centerY.equalTo(self);
         
         

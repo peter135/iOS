@@ -64,7 +64,7 @@
 
 @end
 
-@interface ViewController : UIViewController
+@interface JSViewController : UIViewController
 
 
 @end

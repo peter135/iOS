@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MGJRouter.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [MGJRouter openURL:@"pr://controller/detail" completion:^(id result) {
+        
+        NSLog(@"open complete");
+        
+        
+    }];
+    
+    
     return YES;
 }
 
