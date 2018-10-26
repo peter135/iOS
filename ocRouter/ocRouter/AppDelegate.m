@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "MGJRouter.h"
+#import "ViewController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -19,12 +21,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [MGJRouter openURL:@"pr://controller/detail" completion:^(id result) {
-        
-        NSLog(@"open complete");
-        
-        
-    }];
+    ViewController *controller = [ViewController new];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
     
     
     return YES;

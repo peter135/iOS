@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		863095C17A5309483DF40B73 /* Pods_ocRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE90BA91E6A357DD06B5EAA /* Pods_ocRouter.framework */; };
+		D0C14AB62182F86500CB52DA /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C14AB52182F86500CB52DA /* Demo1ViewController.m */; };
+		D0C14AB92182F87C00CB52DA /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C14AB82182F87C00CB52DA /* Demo2ViewController.m */; };
 		D0D58C5821814B45006E82D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C5721814B45006E82D6 /* AppDelegate.m */; };
 		D0D58C5B21814B45006E82D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C5A21814B45006E82D6 /* ViewController.m */; };
 		D0D58C5E21814B45006E82D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D58C5C21814B45006E82D6 /* Main.storyboard */; };
@@ -31,6 +33,10 @@
 		5185FD0377BC6C0178CEBA48 /* Pods-ocRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocRouter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ocRouter/Pods-ocRouter.debug.xcconfig"; sourceTree = "<group>"; };
 		81C68C1B898878AE09108A99 /* Pods-ocRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocRouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ocRouter/Pods-ocRouter.release.xcconfig"; sourceTree = "<group>"; };
 		AFE90BA91E6A357DD06B5EAA /* Pods_ocRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ocRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C14AB42182F86500CB52DA /* Demo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		D0C14AB52182F86500CB52DA /* Demo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		D0C14AB72182F87C00CB52DA /* Demo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
+		D0C14AB82182F87C00CB52DA /* Demo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
 		D0D58C5321814B45006E82D6 /* ocRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D58C5621814B45006E82D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0D58C5721814B45006E82D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +188,10 @@
 			children = (
 				D0D58C8D21816FFD006E82D6 /* MainRouter.h */,
 				D0D58C8E21816FFD006E82D6 /* MainRouter.m */,
+				D0C14AB42182F86500CB52DA /* Demo1ViewController.h */,
+				D0C14AB52182F86500CB52DA /* Demo1ViewController.m */,
+				D0C14AB72182F87C00CB52DA /* Demo2ViewController.h */,
+				D0C14AB82182F87C00CB52DA /* Demo2ViewController.m */,
 			);
 			path = mainRouter;
 			sourceTree = "<group>";
@@ -313,6 +323,7 @@
 				D0D58C8F21816FFD006E82D6 /* MainRouter.m in Sources */,
 				D0D58C8A21814B84006E82D6 /* PersonView.m in Sources */,
 				D0D58C8521814B84006E82D6 /* JSViewController.m in Sources */,
+				D0C14AB62182F86500CB52DA /* Demo1ViewController.m in Sources */,
 				D0D58C8321814B84006E82D6 /* UIView+loading.m in Sources */,
 				D0D58C5B21814B45006E82D6 /* ViewController.m in Sources */,
 				D0D58C8921814B84006E82D6 /* PersonViewModel.m in Sources */,
@@ -320,6 +331,7 @@
 				D0D58C8421814B84006E82D6 /* UIViewController+FetchViewWillAppear.m in Sources */,
 				D0D58C8221814B84006E82D6 /* Loading.m in Sources */,
 				D0D58C8B21814B84006E82D6 /* PersonController.m in Sources */,
+				D0C14AB92182F87C00CB52DA /* Demo2ViewController.m in Sources */,
 				D0D58C5821814B45006E82D6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
