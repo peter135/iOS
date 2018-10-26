@@ -10,6 +10,7 @@
 		863095C17A5309483DF40B73 /* Pods_ocRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE90BA91E6A357DD06B5EAA /* Pods_ocRouter.framework */; };
 		D0C14AB62182F86500CB52DA /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C14AB52182F86500CB52DA /* Demo1ViewController.m */; };
 		D0C14AB92182F87C00CB52DA /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C14AB82182F87C00CB52DA /* Demo2ViewController.m */; };
+		D0C14ABD218308C300CB52DA /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C14ABC218308C300CB52DA /* CoreTextView.m */; };
 		D0D58C5821814B45006E82D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C5721814B45006E82D6 /* AppDelegate.m */; };
 		D0D58C5B21814B45006E82D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58C5A21814B45006E82D6 /* ViewController.m */; };
 		D0D58C5E21814B45006E82D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D58C5C21814B45006E82D6 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 		D0C14AB52182F86500CB52DA /* Demo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 		D0C14AB72182F87C00CB52DA /* Demo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
 		D0C14AB82182F87C00CB52DA /* Demo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		D0C14ABB218308C300CB52DA /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
+		D0C14ABC218308C300CB52DA /* CoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
 		D0D58C5321814B45006E82D6 /* ocRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D58C5621814B45006E82D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0D58C5721814B45006E82D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D0C14ABA218308C300CB52DA /* AsyncDraw */ = {
+			isa = PBXGroup;
+			children = (
+				D0C14ABB218308C300CB52DA /* CoreTextView.h */,
+				D0C14ABC218308C300CB52DA /* CoreTextView.m */,
+			);
+			path = AsyncDraw;
+			sourceTree = "<group>";
+		};
 		D0D58C4A21814B45006E82D6 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		D0D58C5521814B45006E82D6 /* ocRouter */ = {
 			isa = PBXGroup;
 			children = (
+				D0C14ABA218308C300CB52DA /* AsyncDraw */,
 				D0D58C8C21816FD2006E82D6 /* mainRouter */,
 				D0D58C7421814B83006E82D6 /* JS_OC */,
 				D0D58C6C21814B83006E82D6 /* Loading */,
@@ -324,6 +337,7 @@
 				D0D58C8A21814B84006E82D6 /* PersonView.m in Sources */,
 				D0D58C8521814B84006E82D6 /* JSViewController.m in Sources */,
 				D0C14AB62182F86500CB52DA /* Demo1ViewController.m in Sources */,
+				D0C14ABD218308C300CB52DA /* CoreTextView.m in Sources */,
 				D0D58C8321814B84006E82D6 /* UIView+loading.m in Sources */,
 				D0D58C5B21814B45006E82D6 /* ViewController.m in Sources */,
 				D0D58C8921814B84006E82D6 /* PersonViewModel.m in Sources */,

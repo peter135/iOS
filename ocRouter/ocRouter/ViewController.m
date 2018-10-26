@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "MGJRouter.h"
-
+#import "CoreTextView.h"
 
 @interface ViewController ()
 
@@ -56,6 +56,23 @@
     [self addBtn1];
     
     [self addBtn2];
+    
+    [self addAyncText];
+    
+}
+
+
+-(void)addAyncText{
+    
+    CoreTextView *textView = [CoreTextView new];
+    
+    textView.frame = CGRectMake(40, 300, 200, 80);
+    
+    textView.backgroundColor=[UIColor blueColor];
+    
+    [self.view addSubview:textView];
+    
+    [textView diplayAsync];
     
 }
 
