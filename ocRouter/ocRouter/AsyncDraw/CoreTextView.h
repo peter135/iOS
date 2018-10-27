@@ -10,6 +10,8 @@
 
 @interface CoreTextView : UIView
 
+@property(strong,assign) BOOL isCanceled;
+
 -(void)diplayAsync;
 
 -(instancetype)initWithFrame:(CGRect)frame config:(NSDictionary*)dict;

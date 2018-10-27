@@ -144,6 +144,15 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
+        if (self.isCanceled) {
+            
+            
+            return ;
+            
+        }
+        
+        
+        
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(200,200), false, 2);
         
 //        NSString *imgName = @"basket_h";
