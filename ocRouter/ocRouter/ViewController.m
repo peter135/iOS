@@ -51,6 +51,8 @@
     
     self.view.backgroundColor=[UIColor whiteColor];
     
+    self.navigationController.navigationBar.hidden = YES;
+    
     // Do any additional setup after loading the view, typically from a nib.
     
     [self addBtn1];
@@ -66,7 +68,9 @@
     
     CoreTextView *textView = [CoreTextView new];
     
-    textView.frame = CGRectMake(40, 300, 200, 100);
+    textView.frame = CGRectMake(40, 300, 200, 200);
+    
+//    textView.backgroundColor=[UIColor redColor];
     
     [self.view addSubview:textView];
     

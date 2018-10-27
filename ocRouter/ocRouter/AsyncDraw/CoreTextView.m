@@ -144,14 +144,14 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(200,80), false, 2);
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(200,200), false, 2);
         
-        NSString *imgName = @"basket_h";
-        UIImage *image = [UIImage imageNamed:imgName];
-        if(image){
-            [image drawInRect:CGRectMake(10, 10, 28.5, 28.5)];
-        }
-        
+//        NSString *imgName = @"basket_h";
+//        UIImage *image = [UIImage imageNamed:imgName];
+//        if(image){
+//            [image drawInRect:CGRectMake(10, 10, 28.5, 28.5)];
+//        }
+//
         
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         
@@ -199,20 +199,20 @@
 //            NSAttributedString *attributeString = [[NSAttributedString alloc] initWithString:string attributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:whiteColor,NSParagraphStyleAttributeName:paragraphStyle}];
             
             
-            NSMutableAttributedString *AttributedStr = [[NSMutableAttributedString alloc] initWithString:@"今天天气不错呀呀呀呀"];
+            NSMutableAttributedString *AttributedStr = [[NSMutableAttributedString alloc] initWithString:@"今天天气不错呀呀呀呀嘿嘿嘿嘿嘿"];
             
             [AttributedStr addAttribute:NSFontAttributeName
              
-                                  value:[UIFont systemFontOfSize:14.0]
+                                  value:[UIFont systemFontOfSize:12.0]
              
                                   range:NSMakeRange(0, 2)];
             
             
             [AttributedStr addAttribute:NSFontAttributeName
              
-                                  value:[UIFont systemFontOfSize:17.0]
+                                  value:[UIFont systemFontOfSize:13.0]
              
-                                  range:NSMakeRange(2,4)];
+                                  range:NSMakeRange(2,AttributedStr.length-3)];
       
              [AttributedStr addAttribute:NSForegroundColorAttributeName
                                    value:[UIColor redColor]
@@ -235,9 +235,9 @@
             
             CGFloat height = [AttributedStr boundingRectWithSize:CGSizeMake(100, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesDeviceMetrics|NSStringDrawingTruncatesLastVisibleLine context:NULL].size.height;
             
-            [AttributedStr drawInRect:CGRectMake(40, 20, 100, height)];
+            [AttributedStr drawInRect:CGRectMake(40, 20, 100, 60)];
 
-             NSLog(@"size with attribute %f",height);
+             NSLog(@"size with attribute height%f",height);
 
 //            CGSize size = [@"测试数据**********测试数据**********" sizeWithAttributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:whiteColor,NSParagraphStyleAttributeName:paragraphStyle}];
 //            NSLog(@"size with attribute %@",NSStringFromCGSize(size));
@@ -272,6 +272,16 @@
         
         
     });
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInView:self];
+    
+    NSLog(@"touchLocation %@",NSStringFromCGPoint(touchLocation));
+    
     
 }
 
