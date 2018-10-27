@@ -66,9 +66,7 @@
     
     CoreTextView *textView = [CoreTextView new];
     
-    textView.frame = CGRectMake(40, 300, 200, 80);
-    
-    textView.backgroundColor=[UIColor blueColor];
+    textView.frame = CGRectMake(40, 300, 200, 100);
     
     [self.view addSubview:textView];
     

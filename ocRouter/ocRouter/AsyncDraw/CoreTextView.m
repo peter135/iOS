@@ -155,47 +155,92 @@
         
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         
-//        paragraphStyle.lineSpacing = 10;// 字体的行间距
+        paragraphStyle.lineSpacing = 10;// 字体的行间距
+        
+        paragraphStyle.lineBreakMode = NSLineBreakByCharWrapping;
+        
+        paragraphStyle.minimumLineHeight = 44;
+
+
 //
 //        paragraphStyle.firstLineHeadIndent = 20.0f;//首行缩进
 //
 //        paragraphStyle.alignment = NSTextAlignmentJustified;//（两端对齐的）文本对齐方式：（左，中，右，两端对齐，自然）
 //
-        paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;//结尾部分的内容以……方式省略 ( "...wxyz" ,"abcd..." ,"ab...yz")
+//        paragraphStyle.lineBreakMode = NSLineBreakByClipping;//结尾部分的内容以……方式省略 ( "...wxyz" ,"abcd..." ,"ab...yz")
         
 //        paragraphStyle.headIndent = 20;//整体缩进(首行除外)
-//        
+//
 //        paragraphStyle.tailIndent = 20;//尾部缩进
-//        
+//
 //        paragraphStyle.minimumLineHeight = 10;//最低行高
-//        
+//
 //        paragraphStyle.maximumLineHeight = 20;//最大行高
-//        
+//
 //        paragraphStyle.paragraphSpacing = 15;//段与段之间的间距
-//        
+//
 //        paragraphStyle.paragraphSpacingBefore = 22.0f;//段首行空白空间/* Distance between the bottom of the previous paragraph (or the end of its paragraphSpacing, if any) and the top of this paragraph. */
-//        
+//
 //        paragraphStyle.baseWritingDirection = NSWritingDirectionLeftToRight;//从左到右的书写方向（一共➡️⬇️⬅️三种）
-//        
+//
 //        paragraphStyle.lineHeightMultiple = 15;/* Natural line height is multiplied by this factor (if positive) before being constrained by minimum and maximum line height. */
-//        
+//
 //        paragraphStyle.hyphenationFactor = 1;
 
         
         
-        NSString *string = @"测试数据**********测试数据**********";
+        NSString *string = @"测试数据";
         if(string){
-            UIColor *whiteColor = [UIColor redColor];
             
-            UIFont *font = [UIFont systemFontOfSize:17];
+//            UIColor *whiteColor = [UIColor redColor];
+//
+//            UIFont *font = [UIFont systemFontOfSize:17];
+//
+//            NSAttributedString *attributeString = [[NSAttributedString alloc] initWithString:string attributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:whiteColor,NSParagraphStyleAttributeName:paragraphStyle}];
             
-            [string drawInRect:CGRectMake(40, 40, 100, 100) withAttributes:@{NSFontAttributeName:font,
-                                                                     NSForegroundColorAttributeName:whiteColor,
-                                                                     NSParagraphStyleAttributeName:paragraphStyle
-                                                                     }];
             
-            CGSize size = [@"测试数据**********测试数据**********" sizeWithAttributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:whiteColor,NSParagraphStyleAttributeName:paragraphStyle}];
-            NSLog(@"size with attribute %@",NSStringFromCGSize(size));
+            NSMutableAttributedString *AttributedStr = [[NSMutableAttributedString alloc] initWithString:@"今天天气不错呀呀呀呀"];
+            
+            [AttributedStr addAttribute:NSFontAttributeName
+             
+                                  value:[UIFont systemFontOfSize:14.0]
+             
+                                  range:NSMakeRange(0, 2)];
+            
+            
+            [AttributedStr addAttribute:NSFontAttributeName
+             
+                                  value:[UIFont systemFontOfSize:17.0]
+             
+                                  range:NSMakeRange(2,4)];
+      
+             [AttributedStr addAttribute:NSForegroundColorAttributeName
+                                   value:[UIColor redColor]
+                                   range:NSMakeRange(5, 3)];
+            
+            
+            NSTextAttachment *attachment = [[NSTextAttachment alloc]initWithData:nil ofType:nil];
+            UIImage *image = [UIImage imageNamed:@"通用蓝"];
+            attachment.image = image;
+            attachment.bounds = CGRectMake(0, 0, 22, 22);
+            
+            NSAttributedString *text = [NSAttributedString attributedStringWithAttachment:attachment];
+            [AttributedStr insertAttributedString:text atIndex:5];
+            
+            
+//
+//            NSAttributedString* attachmentString = [NSAttributedString attributedStringWithAttachment:attachment];
+
+            
+            
+            CGFloat height = [AttributedStr boundingRectWithSize:CGSizeMake(100, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesDeviceMetrics|NSStringDrawingTruncatesLastVisibleLine context:NULL].size.height;
+            
+            [AttributedStr drawInRect:CGRectMake(40, 20, 100, height)];
+
+             NSLog(@"size with attribute %f",height);
+
+//            CGSize size = [@"测试数据**********测试数据**********" sizeWithAttributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:whiteColor,NSParagraphStyleAttributeName:paragraphStyle}];
+//            NSLog(@"size with attribute %@",NSStringFromCGSize(size));
         
         }
         
