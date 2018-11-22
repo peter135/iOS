@@ -185,13 +185,13 @@
 			isa = PBXGroup;
 			children = (
 				D0D58C7A21814B84006E82D6 /* PersonViewModel.h */,
-				D0D58C7B21814B84006E82D6 /* PersonController.h */,
-				D0D58C7C21814B84006E82D6 /* PersonView.h */,
-				D0D58C7D21814B84006E82D6 /* PersonModel.m */,
 				D0D58C7E21814B84006E82D6 /* PersonViewModel.m */,
-				D0D58C7F21814B84006E82D6 /* PersonView.m */,
+				D0D58C7B21814B84006E82D6 /* PersonController.h */,
 				D0D58C8021814B84006E82D6 /* PersonController.m */,
+				D0D58C7C21814B84006E82D6 /* PersonView.h */,
+				D0D58C7F21814B84006E82D6 /* PersonView.m */,
 				D0D58C8121814B84006E82D6 /* PersonModel.h */,
+				D0D58C7D21814B84006E82D6 /* PersonModel.m */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
